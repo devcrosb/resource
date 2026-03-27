@@ -4,4 +4,6 @@ _*
 *.pyc
 log/*
 cache/*
-*DS_Store
+*DS_Store*
+.DS_Store*
+
