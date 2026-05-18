@@ -1,0 +1,752 @@
+{
+    "select": {
+        "type": "imperative",
+        "value": "select",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "get": {
+        "type": "imperative",
+        "value": "get",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "fetch": {
+        "type": "imperative",
+        "value": "fetch",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "download": {
+        "type": "imperative",
+        "value": "download",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "find": {
+        "type": "imperative",
+        "value": "find",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "retrieve": {
+        "type": "imperative",
+        "value": "retrieve",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "take": {
+        "type": "imperative",
+        "value": "take",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "please": {
+        "type": "imperative",
+        "value": "please",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "do": {
+        "type": "interorgative",
+        "value": "do",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "does": {
+        "type": "interorgative",
+        "value": "does",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "did": {
+        "type": "interorgative",
+        "value": "did",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "is": {
+        "type": "interorgative",
+        "value": "is",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "are": {
+        "type": "interorgative",
+        "value": "are",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "am": {
+        "type": "interorgative",
+        "value": "am",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "was": {
+        "type": "interorgative",
+        "value": "was",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "were": {
+        "type": "interorgative",
+        "value": "were",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "have": {
+        "type": "interorgative",
+        "value": "have",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "has": {
+        "type": "interorgative",
+        "value": "has",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "had": {
+        "type": "interorgative",
+        "value": "had",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "can": {
+        "type": "interorgative",
+        "value": "can",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "could": {
+        "type": "interorgative",
+        "value": "could",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "will": {
+        "type": "interorgative",
+        "value": "will",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "would": {
+        "type": "interorgative",
+        "value": "would",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "shall": {
+        "type": "interorgative",
+        "value": "shall",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "should": {
+        "type": "interorgative",
+        "value": "should",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "may": {
+        "type": "interorgative",
+        "value": "may",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "might": {
+        "type": "interorgative",
+        "value": "might",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "must": {
+        "type": "interorgative",
+        "value": "must",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "who": {
+        "type": "w5",
+        "value": "who",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "what": {
+        "type": "w5",
+        "value": "what",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "when": {
+        "type": "w5",
+        "value": "when",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "where": {
+        "type": "w5",
+        "value": "where",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "why": {
+        "type": "w5",
+        "value": "why",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "how": {
+        "type": "w5",
+        "value": "how",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "which": {
+        "type": "w5",
+        "value": "which",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "whom": {
+        "type": "w5",
+        "value": "whom",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "whose": {
+        "type": "w5",
+        "value": "whose",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "a": {
+        "type": "article",
+        "value": "a",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "the": {
+        "type": "article",
+        "value": "the",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "that": {
+        "type": "article",
+        "value": "that",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "this": {
+        "type": "article",
+        "value": "this",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "those": {
+        "type": "article",
+        "value": "those",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "on": {
+        "type": "prepostion",
+        "value": "on",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "at": {
+        "type": "prepostion",
+        "value": "at",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "in": {
+        "type": "prepostion",
+        "value": "in",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "before": {
+        "type": "prepostion",
+        "value": "before",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "after": {
+        "type": "prepostion",
+        "value": "after",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "under": {
+        "type": "prepostion",
+        "value": "under",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "over": {
+        "type": "prepostion",
+        "value": "over",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "between": {
+        "type": "prepostion",
+        "value": "between",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "inside": {
+        "type": "prepostion",
+        "value": "inside",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "to": {
+        "type": "prepostion",
+        "value": "to",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "into": {
+        "type": "prepostion",
+        "value": "into",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "through": {
+        "type": "prepostion",
+        "value": "through",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "from": {
+        "type": "prepostion",
+        "value": "from",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "toward": {
+        "type": "prepostion",
+        "value": "toward",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "i": {
+        "type": "pronoun",
+        "value": "i",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "you": {
+        "type": "pronoun",
+        "value": "you",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "he": {
+        "type": "pronoun",
+        "value": "he",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "she": {
+        "type": "pronoun",
+        "value": "she",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "it": {
+        "type": "pronoun",
+        "value": "it",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "we": {
+        "type": "pronoun",
+        "value": "we",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "they": {
+        "type": "pronoun",
+        "value": "they",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "me": {
+        "type": "pronoun",
+        "value": "me",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "him": {
+        "type": "pronoun",
+        "value": "him",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "her": {
+        "type": "pronoun",
+        "value": "her",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "us": {
+        "type": "pronoun",
+        "value": "us",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "them": {
+        "type": "pronoun",
+        "value": "them",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "mine": {
+        "type": "pronoun",
+        "value": "mine",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "yours": {
+        "type": "pronoun",
+        "value": "yours",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "myself": {
+        "type": "pronoun",
+        "value": "myself",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "their": {
+        "type": "pronoun",
+        "value": "their",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "my": {
+        "type": "pronoun",
+        "value": "my",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "for": {
+        "type": "conjunction",
+        "value": "for",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "and": {
+        "type": "conjunction",
+        "value": "and",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "or": {
+        "type": "conjunction",
+        "value": "or",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "nor": {
+        "type": "conjunction",
+        "value": "nor",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "not": {
+        "type": "conjunction",
+        "value": "not",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "but": {
+        "type": "conjunction",
+        "value": "but",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "yet": {
+        "type": "conjunction",
+        "value": "yet",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "soboth": {
+        "type": "conjunction",
+        "value": "soboth",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "either": {
+        "type": "conjunction",
+        "value": "either",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "whether": {
+        "type": "conjunction",
+        "value": "whether",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "neither": {
+        "type": "conjunction",
+        "value": "neither",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "such": {
+        "type": "conjunction",
+        "value": "such",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "rather": {
+        "type": "conjunction",
+        "value": "rather",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "than": {
+        "type": "conjunction",
+        "value": "than",
+        "usage": "syntactic",
+        "group": "word"
+    },
+    "!": {
+        "type": "exclamation",
+        "value": "!",
+        "usage": "punctuation",
+        "group": "stop"
+    },
+    "?": {
+        "type": "question",
+        "value": "?",
+        "usage": "punctuation",
+        "group": "stop"
+    },
+    ".": {
+        "type": "full-stop",
+        "value": ".",
+        "usage": "punctuation",
+        "group": "stop"
+    },
+    ";": {
+        "type": "semicolon",
+        "value": ";",
+        "usage": "punctuation",
+        "group": "stop"
+    },
+    ":": {
+        "type": "colon",
+        "value": ":",
+        "usage": "punctuation",
+        "group": "stop"
+    },
+    "-": {
+        "type": "hyphen",
+        "value": "-",
+        "usage": "punctuation",
+        "group": "word-delim"
+    },
+    "/": {
+        "type": "foward-slash",
+        "value": "/",
+        "usage": "punctuation",
+        "group": "word-delim"
+    },
+    "ip_address": {
+        "type": "key",
+        "value": "ip",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "ip": {
+        "type": "key",
+        "value": "ip",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "mac_address": {
+        "type": "key",
+        "value": "mac",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "mac": {
+        "type": "key",
+        "value": "mac",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "network_address": {
+        "type": "key",
+        "value": "network",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "network": {
+        "type": "key",
+        "value": "network",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "email": {
+        "type": "key",
+        "value": "email",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "hostname": {
+        "type": "key",
+        "value": "hostname",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "cname": {
+        "type": "key",
+        "value": "cname",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "fqdn": {
+        "type": "key",
+        "value": "fqdn",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "domain": {
+        "type": "key",
+        "value": "domain",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "system_name": {
+        "type": "key",
+        "value": "system_name",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "system_id": {
+        "type": "key",
+        "value": "system_id",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "asset_name": {
+        "type": "key",
+        "value": "asset_name",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "asset_id": {
+        "type": "key",
+        "value": "asset_id",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "interface_name": {
+        "type": "key",
+        "value": "interface_name",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "interface_id": {
+        "type": "key",
+        "value": "interface_id",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "vendor": {
+        "type": "key",
+        "value": "vendor",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "model": {
+        "type": "key",
+        "value": "model",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "time": {
+        "type": "key",
+        "value": "time",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "date": {
+        "type": "key",
+        "value": "date",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "datetime": {
+        "type": "key",
+        "value": "datetime",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "city": {
+        "type": "key",
+        "value": "city",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "country": {
+        "type": "key",
+        "value": "country",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "region": {
+        "type": "key",
+        "value": "region",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "timezone":{
+        "type": "key",
+        "value": "timezone",
+        "usage": "semantic",
+        "group": "param"       
+    },
+    "building_id": {
+        "type": "key",
+        "value": "building_id",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "country_id": {
+        "type": "key",
+        "value": "country_id",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "region_id": {
+        "type": "key",
+        "value": "region_id",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "location_id": {
+        "type": "key",
+        "value": "location_id",
+        "usage": "semantic",
+        "group": "param"
+    },
+    "port": {
+        "type": "key",
+        "value": "port",
+        "usage": "semantic",
+        "group": "param"
+    }
+}
