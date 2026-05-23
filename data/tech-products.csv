@@ -1,0 +1,65 @@
+﻿vendor_name,product_series,product_group,product_type,model_name,description,lifecycle,vendor_id,model_id,product_id
+A10 Networks,Thunder ADC,Network,Load Balancer,ACE30,Application delivery controller,Active,a10,ace30,a10-ace30
+A10 Networks,Thunder TPS,Network,Security,TH4445S,DDoS protection appliance,Active,a10,th4445s,a10-th4445s
+Arista,7050X3,Network,Switch,7050SX3,Data center leaf switch,Active,arista,7050sx3,arista-7050sx3
+Arista,7060X,Network,Switch,7060CX2,Spine and leaf switch,Active,arista,7060cx2,arista-7060cx2
+Arista,7280R,Network,Router,7280R3,Routing and telemetry platform,Active,arista,7280r3,arista-7280r3
+Arista,7500R3,Network,Switch,7508R3,Modular data center spine switch,Active,arista,7508r3,arista-7508r3
+Arista,7800R3,Network,Router,7800R3,High-density core router,Active,arista,7800r3,arista-7800r3
+Cisco,Catalyst 9000,Network,L3 Switch,Catalyst 9300,Enterprise campus access switch,Active,cisco,catalyst-9300,cisco-catalyst-9300
+Cisco,Catalyst 9000,Network,L3 Switch,Catalyst 9500,Core and aggregation switch,Active,cisco,catalyst-9500,cisco-catalyst-9500
+Cisco,Nexus 9000,Network,L3 Switch,Nexus 93180YC-FX,Data center leaf switch,Active,cisco,nexus-93180yc-fx,cisco-nexus-93180yc-fx
+Cisco,Nexus 9000,Network,L3 Switch,Nexus 9508,Modular spine switch chassis,Active,cisco,nexus-9508,cisco-nexus-9508
+Cisco,ASR 1000,Network,Router,ASR 1001-X,Enterprise WAN edge router,Active,cisco,asr-1001-x,cisco-asr-1001-x
+Cisco,ISR 4000,Network,Router,ISR 4451-X,Branch services router,Active,cisco,isr-4451-x,cisco-isr-4451-x
+Cisco,Firepower,Network,Firewall,Firepower 2130,Next-generation firewall,Active,cisco,firepower-2130,cisco-firepower-2130
+Cisco,UCS,Network,Load Balancer,UCS C240 M6,Rackmount enterprise server,Active,cisco,ucs-c240-m6,cisco-ucs-c240-m6
+Cisco,UCS Blade,Network,Load Balancer,UCS B200 M6,Blade server for converged infrastructure,Active,cisco,ucs-b200-m6,cisco-ucs-b200-m6
+Citrix,ADC MPX,Network,Load Balancer,ADC MPX 8910,Physical application delivery controller,Active,citrix,adc-mpx-8910,citrix-adc-mpx-8910
+Citrix,ADC VPX,Network,Load Balancer,ADC VPX 200,Virtual load balancer appliance,Active,citrix,adc-vpx-200,citrix-adc-vpx-200
+Citrix,ADC SDX,Network,Load Balancer,ADC SDX 14030,Multi-tenant ADC platform,Active,citrix,adc-sdx-14030,citrix-adc-sdx-14030
+Citrix,NetScaler,Network,Load Balancer,NetScaler 8200,Enterprise load balancing and application delivery,Active,citrix,netscaler-8200,citrix-netscaler-8200
+Dell,PowerEdge,Server,Chasis Compute,PowerEdge R760,Enterprise rack server,Active,dell,poweredge-r760,dell-poweredge-r760
+Dell,PowerEdge,Server,Chasis Compute,PowerEdge R660,High-density compute server,Active,dell,poweredge-r660,dell-poweredge-r660
+Dell,PowerEdge MX,Server,Chasis Compute,PowerEdge MX7000,Modular infrastructure chassis,Active,dell,poweredge-mx7000,dell-poweredge-mx7000
+Dell,PowerSwitch,Server,Chasis Compute,PowerSwitch S5248F-ON,Data center top-of-rack switch,Active,dell,powerswitch-s5248f-on,dell-powerswitch-s5248f-on
+Dell,PowerSwitch Z-Series,Server,Chasis Compute,PowerSwitch Z9664F-ON,Spine/core data center switch,Active,dell,powerswitch-z9664f-on,dell-powerswitch-z9664f-on
+Dell,Unity XT,Server,Chasis Compute,Unity XT 480,Midrange enterprise storage array,Active,dell,unity-xt-480,dell-unity-xt-480
+Dell,VxRail,Server,Chasis Compute,VxRail E660F,Hyperconverged infrastructure appliance,Active,dell,vxrail-e660f,dell-vxrail-e660f
+F5,BIG-IP iSeries,Network,Load Balancer,BIG-IP i5800,Enterprise application delivery controller,Active,f5,big-ip-i5800,f5-big-ip-i5800
+F5,BIG-IP rSeries,Network,Load Balancer,BIG-IP r10900,Modern ADC and security platform,Active,f5,big-ip-r10900,f5-big-ip-r10900
+F5,VELOS,Network,Load Balancer,VELOS CX1610,High-performance chassis platform,Active,f5,velos-cx1610,f5-velos-cx1610
+F5,BIG-IP VE,Network,Load Balancer,BIG-IP Virtual Edition,Virtual load balancer appliance,Active,f5,big-ip-virtual-edition,f5-big-ip-virtual-edition
+Fortinet,FortiGate,Network,Firewall,FortiGate 100F,Enterprise next-generation firewall,Active,fortinet,fortigate-100f,fortinet-fortigate-100f
+Fortinet,FortiGate,Network,Firewall,FortiGate 400F,Mid-range data center firewall,Active,fortinet,fortigate-400f,fortinet-fortigate-400f
+Fortinet,FortiGate,Network,Firewall,FortiGate 1800F,High-performance hyperscale firewall,Active,fortinet,fortigate-1800f,fortinet-fortigate-1800f
+Fortinet,FortiAnalyzer,Network,Security,FortiAnalyzer 400G,Security analytics and logging appliance,Active,fortinet,fortianalyzer-400g,fortinet-fortianalyzer-400g
+Fortinet,FortiManager,Network,Security,FortiManager 2000E,Centralized firewall management,Active,fortinet,fortimanager-2000e,fortinet-fortimanager-2000e
+HPE,ProLiant,Server,Chasis Compute,ProLiant DL380 Gen11,Enterprise rack server,Active,hp,proliant-dl380-gen11,hp-proliant-dl380-gen11
+HPE,ProLiant,Server,Chasis Compute,ProLiant DL360 Gen11,Dense compute rack server,Active,hp,proliant-dl360-gen11,hp-proliant-dl360-gen11
+HPE,Synergy,Server,Chasis Compute,Synergy 480 Gen11,Composable infrastructure compute module,Active,hp,synergy-480-gen11,hp-synergy-480-gen11
+HPE,Apollo,Server,Chasis Compute,Apollo 6500 Gen10 Plus,AI and HPC optimized server,Active,hp,apollo-6500-gen10-plus,hp-apollo-6500-gen10-plus
+HPE,Aruba CX,Server,Chasis Compute,Aruba 6300M,Enterprise access switch,Active,hp,aruba-6300m,hp-aruba-6300m
+HPE,Aruba CX,Server,Chasis Compute,Aruba 8325,Data center switch,Active,hp,aruba-8325,hp-aruba-8325
+Juniper,MX Series,Network,Router,MX480,Carrier and enterprise edge router,Active,juniper,mx480,juniper-mx480
+Juniper,MX Series,Network,Router,MX960,High-capacity core router,Active,juniper,mx960,juniper-mx960
+Juniper,EX Series,Network,Switch,EX4300,Enterprise access switch,Active,juniper,ex4300,juniper-ex4300
+Juniper,EX Series,Network,Switch,EX4650,High-performance data center switch,Active,juniper,ex4650,juniper-ex4650
+Juniper,QFX Series,Network,Switch,QFX5120,Spine/leaf data center switch,Active,juniper,qfx5120,juniper-qfx5120
+Juniper,SRX Series,Network,Router,SRX345,Branch firewall and router,Active,juniper,srx345,juniper-srx345
+Juniper,SRX Series,Network,Router,SRX1500,Enterprise security gateway,Active,juniper,srx1500,juniper-srx1500
+Juniper,PTX Series,Network,Router,PTX10003,Packet transport router,Active,juniper,ptx10003,juniper-ptx10003
+Palo Alto Networks,PA-Series,Network,Firewall,PA-3220,Enterprise next-generation firewall,Active,paloalto,pa-3220,paloalto-pa-3220
+Palo Alto Networks,PA-Series,Network,Firewall,PA-5220,High-throughput security appliance,Active,paloalto,pa-5220,paloalto-pa-5220
+Palo Alto Networks,PA-Series,Network,Firewall,PA-7080,Chassis-based data center firewall,Active,paloalto,pa-7080,paloalto-pa-7080
+Palo Alto Networks,VM-Series,Network,Firewall,VM-Series VM-300,Virtualized firewall appliance,Active,paloalto,vm-series-vm-300,paloalto-vm-series-vm-300
+Palo Alto Networks,CN-Series,Network,Firewall,CN-Series,Kubernetes-native firewall,Active,paloalto,cn-series,paloalto-cn-series
+Riverbed,SteelHead,Network,Load Balancer,SteelHead CX 570,WAN optimization appliance,Mature,riverbed,steelhead-cx-570,riverbed-steelhead-cx-570
+Riverbed,SteelFusion,Network,Load Balancer,SteelFusion SF7600,Edge infrastructure platform,Mature,riverbed,steelfusion-sf7600,riverbed-steelfusion-sf7600
+VMware,vSphere,Server,Virtual Compute,ESXi 8.0,Enterprise hypervisor platform,Active,vmware,esxi-8-0,vmware-esxi-8-0
+VMware,vCenter,Server,Virtual Compute,vCenter Server 8,Virtualization management platform,Active,vmware,vcenter-server-8,vmware-vcenter-server-8
+VMware,NSX,Server,Virtual Compute,NSX-T Data Center,Software-defined networking and security,Active,vmware,nsx-t-data-center,vmware-nsx-t-data-center
+VMware,VCF,Server,Virtual Compute,VMware Cloud Foundation 5,Integrated hybrid cloud platform,Active,vmware,vmware-cloud-foundation-5,vmware-vmware-cloud-foundation-5
+VMware,Tanzu,Server,Virtual Compute,Tanzu Kubernetes Grid,Enterprise Kubernetes platform,Active,vmware,tanzu-kubernetes-grid,vmware-tanzu-kubernetes-grid
+VMware,HCX,Server,Virtual Compute,HCX Enterprise,Hybrid cloud migration platform,Active,vmware,hcx-enterprise,vmware-hcx-enterprise
+VMware,Avi Networks,Server,Virtual Compute,Avi Load Balancer,Software-defined load balancer,Active,vmware,avi-load-balancer,vmware-avi-load-balancer
