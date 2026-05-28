@@ -1,0 +1,683 @@
+[
+    {
+      "term": "Algorithm",
+      "definition": "A structured sequence of instructions used to solve a problem or perform a computation."
+    },
+    {
+      "term": "API",
+      "definition": "Application Programming Interface; a framework that allows software systems to communicate with each other."
+    },
+    {
+      "term": "Artificial Intelligence",
+      "definition": "Technology that enables machines to simulate human intelligence and decision-making."
+    },
+    {
+      "term": "Machine Learning",
+      "definition": "A branch of AI where systems learn patterns from data without explicit programming."
+    },
+    {
+      "term": "Deep Learning",
+      "definition": "A machine learning technique using multi-layer neural networks to process complex data."
+    },
+    {
+      "term": "Neural Network",
+      "definition": "A computational model inspired by the human brain, used in AI systems."
+    },
+    {
+      "term": "Natural Language Processing",
+      "definition": "AI technology focused on understanding and generating human language."
+    },
+    {
+      "term": "Generative AI",
+      "definition": "AI systems capable of creating text, images, code, audio, or video."
+    },
+    {
+      "term": "Automation",
+      "definition": "The use of technology to perform tasks with minimal human intervention."
+    },
+    {
+      "term": "Big Data",
+      "definition": "Large and complex datasets that require advanced processing methods."
+    },
+    {
+      "term": "Data Analytics",
+      "definition": "The process of examining data to discover insights and trends."
+    },
+    {
+      "term": "Data Mining",
+      "definition": "The extraction of useful patterns and information from large datasets."
+    },
+    {
+      "term": "Database",
+      "definition": "An organized system for storing and managing data electronically."
+    },
+    {
+      "term": "Relational Database",
+      "definition": "A database structured into tables with defined relationships."
+    },
+    {
+      "term": "NoSQL Database",
+      "definition": "A non-relational database designed for scalability and flexible data models."
+    },
+    {
+      "term": "Data Warehouse",
+      "definition": "A centralized repository optimized for reporting and analytics."
+    },
+    {
+      "term": "Data Lake",
+      "definition": "A storage repository that holds raw structured and unstructured data."
+    },
+    {
+      "term": "Metadata",
+      "definition": "Information that describes or provides context about other data."
+    },
+    {
+      "term": "ETL",
+      "definition": "Extract, Transform, Load; a process for moving and preparing data."
+    },
+    {
+      "term": "Cloud Computing",
+      "definition": "The delivery of computing services over the internet."
+    },
+    {
+      "term": "Hybrid Cloud",
+      "definition": "A computing environment combining private and public cloud services."
+    },
+    {
+      "term": "Multi-Cloud",
+      "definition": "The use of multiple cloud providers within one architecture."
+    },
+    {
+      "term": "Edge Computing",
+      "definition": "Processing data closer to where it is generated instead of a central cloud."
+    },
+    {
+      "term": "Serverless Computing",
+      "definition": "A cloud model where infrastructure management is handled automatically."
+    },
+    {
+      "term": "Virtualization",
+      "definition": "Creating virtual versions of hardware, servers, or operating systems."
+    },
+    {
+      "term": "Containerization",
+      "definition": "Packaging applications and dependencies into portable isolated containers."
+    },
+    {
+      "term": "Docker",
+      "definition": "A platform for building and managing containerized applications."
+    },
+    {
+      "term": "Kubernetes",
+      "definition": "An orchestration platform for automating container deployment and scaling."
+    },
+    {
+      "term": "Microservices",
+      "definition": "An architecture where applications are built as independent modular services."
+    },
+    {
+      "term": "Monolith",
+      "definition": "A software architecture where all components are tightly integrated."
+    },
+    {
+      "term": "DevOps",
+      "definition": "A methodology combining software development and IT operations."
+    },
+    {
+      "term": "CI/CD",
+      "definition": "Continuous Integration and Continuous Deployment; automated software delivery practices."
+    },
+    {
+      "term": "Git",
+      "definition": "A distributed version control system for tracking code changes."
+    },
+    {
+      "term": "Repository",
+      "definition": "A storage location for source code and project files."
+    },
+    {
+      "term": "Branch",
+      "definition": "A parallel version of source code used for isolated development."
+    },
+    {
+      "term": "Merge",
+      "definition": "Combining changes from different code branches into one."
+    },
+    {
+      "term": "Compiler",
+      "definition": "Software that converts source code into machine code."
+    },
+    {
+      "term": "Interpreter",
+      "definition": "Software that executes code line-by-line without prior compilation."
+    },
+    {
+      "term": "Runtime",
+      "definition": "The environment in which software executes."
+    },
+    {
+      "term": "IDE",
+      "definition": "Integrated Development Environment; software for writing and debugging code."
+    },
+    {
+      "term": "SDK",
+      "definition": "Software Development Kit; tools and libraries for building applications."
+    },
+    {
+      "term": "Framework",
+      "definition": "A reusable software platform that provides structure for application development."
+    },
+    {
+      "term": "Library",
+      "definition": "A collection of reusable code modules."
+    },
+    {
+      "term": "Python",
+      "definition": "A high-level programming language known for simplicity and versatility."
+    },
+    {
+      "term": "JavaScript",
+      "definition": "A programming language widely used for web development."
+    },
+    {
+      "term": "Java",
+      "definition": "A platform-independent programming language commonly used in enterprise systems."
+    },
+    {
+      "term": "C++",
+      "definition": "A high-performance programming language used in systems and application development."
+    },
+    {
+      "term": "JSON",
+      "definition": "JavaScript Object Notation; a lightweight data interchange format."
+    },
+    {
+      "term": "XML",
+      "definition": "Extensible Markup Language used for structuring and transporting data."
+    },
+    {
+      "term": "YAML",
+      "definition": "A human-readable data serialization format often used in configuration files."
+    },
+    {
+      "term": "HTML",
+      "definition": "HyperText Markup Language used to structure web pages."
+    },
+    {
+      "term": "CSS",
+      "definition": "Cascading Style Sheets used to style web pages."
+    },
+    {
+      "term": "Front-End",
+      "definition": "The visual and interactive part of an application users interact with."
+    },
+    {
+      "term": "Back-End",
+      "definition": "The server-side logic and infrastructure behind applications."
+    },
+    {
+      "term": "Full Stack",
+      "definition": "Development involving both front-end and back-end technologies."
+    },
+    {
+      "term": "Responsive Design",
+      "definition": "Design techniques that adapt interfaces to different screen sizes."
+    },
+    {
+      "term": "UX",
+      "definition": "User Experience; the overall usability and satisfaction of a product."
+    },
+    {
+      "term": "UI",
+      "definition": "User Interface; the visual layout and controls of a system."
+    },
+    {
+      "term": "Accessibility",
+      "definition": "Designing systems to be usable by people with disabilities."
+    },
+    {
+      "term": "Cybersecurity",
+      "definition": "The practice of protecting systems, networks, and data from threats."
+    },
+    {
+      "term": "Encryption",
+      "definition": "The process of encoding data to prevent unauthorized access."
+    },
+    {
+      "term": "Decryption",
+      "definition": "The process of converting encrypted data back to readable form."
+    },
+    {
+      "term": "Firewall",
+      "definition": "A security system that filters incoming and outgoing network traffic."
+    },
+    {
+      "term": "VPN",
+      "definition": "Virtual Private Network; a secure encrypted connection over the internet."
+    },
+    {
+      "term": "MFA",
+      "definition": "Multi-Factor Authentication; requiring multiple verification methods for access."
+    },
+    {
+      "term": "2FA",
+      "definition": "Two-Factor Authentication; a subset of MFA using two verification methods."
+    },
+    {
+      "term": "SSO",
+      "definition": "Single Sign-On; one login providing access to multiple systems."
+    },
+    {
+      "term": "OAuth",
+      "definition": "An authorization framework enabling secure delegated access."
+    },
+    {
+      "term": "Phishing",
+      "definition": "A cyberattack that tricks users into revealing sensitive information."
+    },
+    {
+      "term": "Ransomware",
+      "definition": "Malware that encrypts data and demands payment for recovery."
+    },
+    {
+      "term": "Malware",
+      "definition": "Malicious software designed to disrupt or exploit systems."
+    },
+    {
+      "term": "Zero Trust",
+      "definition": "A security model that assumes no user or device is automatically trusted."
+    },
+    {
+      "term": "Tokenization",
+      "definition": "Replacing sensitive data with substitute non-sensitive values."
+    },
+    {
+      "term": "Penetration Testing",
+      "definition": "Simulated cyberattacks used to identify vulnerabilities."
+    },
+    {
+      "term": "Patch Management",
+      "definition": "The process of updating systems to fix vulnerabilities and bugs."
+    },
+    {
+      "term": "Network",
+      "definition": "A group of connected devices that communicate and share resources."
+    },
+    {
+      "term": "LAN",
+      "definition": "Local Area Network; connects devices in a limited area."
+    },
+    {
+      "term": "WAN",
+      "definition": "Wide Area Network; connects networks across large geographic regions."
+    },
+    {
+      "term": "MAN",
+      "definition": "Metropolitan Area Network; spans a city or campus environment."
+    },
+    {
+      "term": "VLAN",
+      "definition": "Virtual LAN; a logical grouping of network devices."
+    },
+    {
+      "term": "Subnet",
+      "definition": "A segmented portion of a larger network."
+    },
+    {
+      "term": "IP Address",
+      "definition": "A unique identifier assigned to devices on a network."
+    },
+    {
+      "term": "IPv4",
+      "definition": "The fourth version of the Internet Protocol using 32-bit addresses."
+    },
+    {
+      "term": "IPv6",
+      "definition": "The latest Internet Protocol version using 128-bit addresses."
+    },
+    {
+      "term": "MAC Address",
+      "definition": "A unique hardware identifier assigned to network interfaces."
+    },
+    {
+      "term": "DNS",
+      "definition": "Domain Name System; translates domain names into IP addresses."
+    },
+    {
+      "term": "DHCP",
+      "definition": "Dynamic Host Configuration Protocol; automatically assigns IP addresses."
+    },
+    {
+      "term": "NAT",
+      "definition": "Network Address Translation; maps private IP addresses to public ones."
+    },
+    {
+      "term": "Gateway",
+      "definition": "A device that connects different networks together."
+    },
+    {
+      "term": "Router",
+      "definition": "A device that directs data packets between networks."
+    },
+    {
+      "term": "Switch",
+      "definition": "A network device that connects devices within a LAN."
+    },
+    {
+      "term": "Hub",
+      "definition": "A basic networking device that broadcasts traffic to all connected devices."
+    },
+    {
+      "term": "Modem",
+      "definition": "A device that converts digital and analog signals for internet access."
+    },
+    {
+      "term": "Access Point",
+      "definition": "A device that enables wireless devices to connect to a network."
+    },
+    {
+      "term": "Bandwidth",
+      "definition": "The maximum amount of data transferable over a network connection."
+    },
+    {
+      "term": "Latency",
+      "definition": "The delay between sending and receiving data."
+    },
+    {
+      "term": "Throughput",
+      "definition": "The actual rate of successful data transfer over a network."
+    },
+    {
+      "term": "Packet",
+      "definition": "A formatted unit of data transmitted over a network."
+    },
+    {
+      "term": "Packet Loss",
+      "definition": "The failure of data packets to reach their destination."
+    },
+    {
+      "term": "Jitter",
+      "definition": "Variability in packet arrival times across a network."
+    },
+    {
+      "term": "TCP",
+      "definition": "Transmission Control Protocol; ensures reliable ordered data delivery."
+    },
+    {
+      "term": "UDP",
+      "definition": "User Datagram Protocol; enables faster but less reliable data transmission."
+    },
+    {
+      "term": "TCP/IP",
+      "definition": "The core suite of protocols used for internet communications."
+    },
+    {
+      "term": "HTTP",
+      "definition": "HyperText Transfer Protocol used for web communications."
+    },
+    {
+      "term": "HTTPS",
+      "definition": "Secure HTTP using encryption via SSL/TLS."
+    },
+    {
+      "term": "SSL",
+      "definition": "Secure Sockets Layer; an older protocol for encrypted communication."
+    },
+    {
+      "term": "TLS",
+      "definition": "Transport Layer Security; the modern standard for encrypted communications."
+    },
+    {
+      "term": "FTP",
+      "definition": "File Transfer Protocol used to transfer files over networks."
+    },
+    {
+      "term": "SFTP",
+      "definition": "Secure File Transfer Protocol providing encrypted file transfers."
+    },
+    {
+      "term": "SMTP",
+      "definition": "Simple Mail Transfer Protocol used for sending email."
+    },
+    {
+      "term": "POP3",
+      "definition": "Post Office Protocol version 3 used for retrieving email."
+    },
+    {
+      "term": "IMAP",
+      "definition": "Internet Message Access Protocol used for accessing email on servers."
+    },
+    {
+      "term": "SNMP",
+      "definition": "Simple Network Management Protocol for monitoring network devices."
+    },
+    {
+      "term": "BGP",
+      "definition": "Border Gateway Protocol used to exchange routing information between networks."
+    },
+    {
+      "term": "OSPF",
+      "definition": "Open Shortest Path First; a routing protocol used in IP networks."
+    },
+    {
+      "term": "QoS",
+      "definition": "Quality of Service; techniques for prioritizing network traffic."
+    },
+    {
+      "term": "CDN",
+      "definition": "Content Delivery Network; distributed servers used to deliver web content faster."
+    },
+    {
+      "term": "Load Balancer",
+      "definition": "A system that distributes workloads across multiple servers."
+    },
+    {
+      "term": "Scalability",
+      "definition": "The ability of a system to handle growth efficiently."
+    },
+    {
+      "term": "Availability",
+      "definition": "The degree to which a system remains operational and accessible."
+    },
+    {
+      "term": "Redundancy",
+      "definition": "Duplication of components to improve reliability and fault tolerance."
+    },
+    {
+      "term": "Failover",
+      "definition": "Automatic switching to a backup system when a failure occurs."
+    },
+    {
+      "term": "Disaster Recovery",
+      "definition": "Processes and systems used to restore operations after major failures."
+    },
+    {
+      "term": "Backup",
+      "definition": "A copy of data stored separately for recovery purposes."
+    },
+    {
+      "term": "Business Continuity",
+      "definition": "Strategies ensuring operations continue during disruptions."
+    },
+    {
+      "term": "ERP",
+      "definition": "Enterprise Resource Planning software integrating business processes."
+    },
+    {
+      "term": "CRM",
+      "definition": "Customer Relationship Management systems used to manage customer interactions."
+    },
+    {
+      "term": "SaaS",
+      "definition": "Software as a Service; software delivered via subscription over the internet."
+    },
+    {
+      "term": "PaaS",
+      "definition": "Platform as a Service; cloud environments for application development."
+    },
+    {
+      "term": "IaaS",
+      "definition": "Infrastructure as a Service; cloud-based virtualized infrastructure."
+    },
+    {
+      "term": "IoT",
+      "definition": "Internet of Things; interconnected physical devices that exchange data."
+    },
+    {
+      "term": "Digital Twin",
+      "definition": "A virtual model that simulates a real-world object or process."
+    },
+    {
+      "term": "Blockchain",
+      "definition": "A distributed ledger technology used for secure transaction recording."
+    },
+    {
+      "term": "Smart Contract",
+      "definition": "Self-executing code stored on a blockchain."
+    },
+    {
+      "term": "Quantum Computing",
+      "definition": "Computing based on quantum mechanics principles."
+    },
+    {
+      "term": "AR",
+      "definition": "Augmented Reality; overlays digital content onto the real world."
+    },
+    {
+      "term": "VR",
+      "definition": "Virtual Reality; immersive computer-generated environments."
+    },
+    {
+      "term": "Mixed Reality",
+      "definition": "Technology combining real and virtual environments interactively."
+    },
+    {
+      "term": "Digital Transformation",
+      "definition": "The integration of digital technologies into business operations and strategy."
+    },
+    {
+      "term": "Low-Code",
+      "definition": "Development platforms requiring minimal manual coding."
+    },
+    {
+      "term": "RPA",
+      "definition": "Robotic Process Automation; software bots automating repetitive tasks."
+    },
+    {
+      "term": "Observability",
+      "definition": "The ability to monitor and understand system internal states through logs and metrics."
+    },
+    {
+      "term": "Telemetry",
+      "definition": "Automated collection and transmission of operational data."
+    },
+    {
+      "term": "Logging",
+      "definition": "Recording events and activities within systems and applications."
+    },
+    {
+      "term": "Monitoring",
+      "definition": "Continuous observation of systems to ensure performance and reliability."
+    },
+    {
+      "term": "Incident Response",
+      "definition": "Processes used to detect, manage, and recover from cybersecurity incidents."
+    },
+    {
+      "term": "Service Mesh",
+      "definition": "Infrastructure managing communication between microservices."
+    },
+    {
+      "term": "API Gateway",
+      "definition": "A service managing API traffic, authentication, and routing."
+    },
+    {
+      "term": "Message Queue",
+      "definition": "A communication mechanism enabling asynchronous message exchange."
+    },
+    {
+      "term": "Event Streaming",
+      "definition": "Continuous processing and delivery of real-time data events."
+    },
+    {
+      "term": "Caching",
+      "definition": "Storing frequently accessed data temporarily for faster retrieval."
+    },
+    {
+      "term": "Session",
+      "definition": "A temporary interaction state between a user and application."
+    },
+    {
+      "term": "Cookie",
+      "definition": "Small data stored in a browser to maintain user state and preferences."
+    },
+    {
+      "term": "Authentication",
+      "definition": "The process of verifying a user's identity."
+    },
+    {
+      "term": "Authorization",
+      "definition": "The process of determining what resources a user can access."
+    },
+    {
+      "term": "Endpoint",
+      "definition": "A device or API connection point on a network."
+    },
+    {
+      "term": "Firmware",
+      "definition": "Embedded software controlling hardware devices."
+    },
+    {
+      "term": "Kernel",
+      "definition": "The core component of an operating system managing hardware resources."
+    },
+    {
+      "term": "Operating System",
+      "definition": "Software that manages computer hardware and applications."
+    },
+    {
+      "term": "Linux",
+      "definition": "An open-source operating system widely used in servers and cloud computing."
+    },
+    {
+      "term": "Windows Server",
+      "definition": "A Microsoft operating system designed for enterprise server environments."
+    },
+    {
+      "term": "Unix",
+      "definition": "A family of multitasking operating systems influential in enterprise computing."
+    },
+    {
+      "term": "Mainframe",
+      "definition": "A high-performance enterprise computer handling large-scale transaction processing."
+    },
+    {
+      "term": "GPU",
+      "definition": "Graphics Processing Unit optimized for parallel processing workloads."
+    },
+    {
+      "term": "CPU",
+      "definition": "Central Processing Unit; the main processor executing instructions."
+    },
+    {
+      "term": "RAM",
+      "definition": "Random Access Memory used for temporary active data storage."
+    },
+    {
+      "term": "SSD",
+      "definition": "Solid State Drive using flash memory for fast data storage."
+    },
+    {
+      "term": "NAS",
+      "definition": "Network Attached Storage providing shared file storage over a network."
+    },
+    {
+      "term": "SAN",
+      "definition": "Storage Area Network providing high-speed access to consolidated storage."
+    },
+    {
+      "term": "Green Computing",
+      "definition": "Environmentally sustainable computing practices."
+    }
+]
+
