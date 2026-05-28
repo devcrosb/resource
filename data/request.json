@@ -1,0 +1,32 @@
+{
+  "user_request": "...",
+  "agent_interpretation": {
+    "intent": "...",
+    "entities": [],
+    "time_range": null
+  },
+  "retrieval_context": {
+    "retrieved_at": "...",
+    "permission_scope": "user_visible_data_only",
+    "filters_applied": [],
+    "known_limitations": []
+  },
+  "datasets": [
+    {
+      "dataset_id": "...",
+      "title": "...",
+      "source": "...",
+      "schema": {},
+      "data": []
+    }
+  ],
+  "llm_task": {
+    "mode": "analyse_retrieved_data",
+    "instructions": [
+      "Use only the provided datasets.",
+      "Do not assume access to missing data.",
+      "Call out gaps or ambiguity."
+    ],
+    "required_output_schema": {}
+  }
+}

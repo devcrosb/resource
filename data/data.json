@@ -1,0 +1,15 @@
+{
+  "dataset_id": "orders_q2",
+  "description": "Customer orders for Q2",
+  "row_count": 5000,
+  "columns": [
+    {"name": "customer_id", "type": "string"},
+    {"name": "order_date", "type": "date"},
+    {"name": "revenue", "type": "number"}
+  ],
+  "rows": [
+    ["C001", "2026-05-01", 1250.50]
+  ],
+  "truncated": true,
+  "sampling_method": "top_relevant_rows"
+}
