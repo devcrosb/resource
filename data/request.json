@@ -1,32 +1,66 @@
-{
-  "user_request": "...",
-  "agent_interpretation": {
-    "intent": "...",
-    "entities": [],
-    "time_range": null
-  },
-  "retrieval_context": {
-    "retrieved_at": "...",
-    "permission_scope": "user_visible_data_only",
-    "filters_applied": [],
-    "known_limitations": []
-  },
-  "datasets": [
-    {
-      "dataset_id": "...",
-      "title": "...",
-      "source": "...",
-      "schema": {},
-      "data": []
-    }
-  ],
-  "llm_task": {
-    "mode": "analyse_retrieved_data",
-    "instructions": [
-      "Use only the provided datasets.",
-      "Do not assume access to missing data.",
-      "Call out gaps or ambiguity."
+[
+  {
+    "user_request": "...",
+    "agent_interpretation": {
+      "intent": "...",
+      "entities": [],
+      "time_range": null
+    },
+    "retrieval_context": {
+      "retrieved_at": "...",
+      "permission_scope": "user_visible_data_only",
+      "filters_applied": [],
+      "known_limitations": []
+    },
+    "datasets": [
+      {
+        "dataset_id": "...",
+        "title": "...",
+        "source": "...",
+        "schema": {},
+        "data": []
+      }
     ],
-    "required_output_schema": {}
+    "llm_task": {
+      "mode": "analyse_retrieved_data",
+      "instructions": [
+        "Use only the provided datasets.",
+        "Do not assume access to missing data.",
+        "Call out gaps or ambiguity."
+      ],
+      "required_output_schema": {}
+    }
+  },
+  {
+    "user_request": "Show me applications impacted by the firewall change last week.",
+    "parameters": {
+      "time_range": {
+        "value": "last week",
+        "resolved_value": {
+          "start": "2026-05-18",
+          "end": "2026-05-24"
+        },
+        "usage": "Use this to filter change records and related events. Do not apply it to static reference documents unless explicitly relevant."
+      },
+      "environment": {
+        "value": "production",
+        "usage": "Use this to restrict retrieved operational data to production systems only."
+      },
+      "application_scope": {
+        "value": "user_accessible_applications",
+        "usage": "Only consider applications visible under the user's enterprise permissions."
+      }
+    },
+    "llm_parameter_instructions": {
+      "general_rule": "Parameters define the intended scope of reasoning and filtering. Use them to interpret the request and constrain analysis.",
+      "do_not_do": [
+        "Do not override permission filters.",
+        "Do not infer parameter values that are not provided.",
+        "Do not broaden scope unless the user explicitly asks.",
+        "If a parameter is ambiguous, report the ambiguity."
+      ],
+      "missing_parameters": "If required parameters are missing, identify them and explain whether the answer is partial or requires clarification.",
+      "conflicting_parameters": "If parameters conflict with retrieved data or documents, call out the conflict explicitly."
+    }
   }
-}
+]
