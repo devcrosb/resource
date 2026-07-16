@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/web/search/style.css">
+
+</head>
+
+
+<body>
+
+<!-- Search Object -->
+
+<main class="search-page">
+        
+    <div class="logo-box">
+        <label class="logo-name">Search</label>
+    </div>
+
+    <div class="search-container">
+        <form
+            id="search-form"
+            class="search-form"
+            autocomplete="off"
+            onsubmit="Search(event)"
+        >
+            <input
+                id="search-input"
+                name="query"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                aria-autocomplete="list"
+                aria-controls="autocomplete-list"
+                aria-expanded="false"
+                spellcheck="true"
+                autocorrect="on"
+                autocapitalize="sentences"
+            >
+
+            <button type="submit" class="search-button" aria-label="Submit search">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+        </form>
+
+        <ul
+            id="autocomplete-list"
+            class="autocomplete-list"
+            role="listbox"
+            aria-label="Search suggestions"
+            hidden
+        ></ul>
+    </div>
+</main>
+
+<script src="/web/search/script.js"></script>
+
+</body>
+</html>

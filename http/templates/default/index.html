@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collapsible AI Layout</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="/static/bootstrap.css">
+
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <main class="main">
+
+      <header class="topbar">
+        <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+          ☰
+        </button>
+
+        <div class="page-title">Assistant</div>
+
+        <div class="topbar-actions">
+          <button class="icon-btn" title="Settings">⚙</button>
+          <button class="icon-btn" title="Profile">👤</button>
+        </div>
+      </header>
+
+      <section class="content"> </section>
+
+    </main>
+  
+</div>
+
+<script>
+    const sidebar = document.getElementById("sidebar");
+    const sidebarToggle = document.getElementById("sidebarToggle");
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const textarea = document.getElementById("messageInput");
+    const composer = document.getElementById("composer");
+
+    function toggleSidebar() {
+      sidebar.classList.toggle("collapsed");
+    }
+
+    sidebarToggle.addEventListener("click", toggleSidebar);
+    mobileMenuBtn.addEventListener("click", toggleSidebar);
+
+    textarea.addEventListener("input", () => {
+      textarea.style.height = "auto";
+      textarea.style.height = `${textarea.scrollHeight}px`;
+    });
+
+    composer.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const value = textarea.value.trim();
+
+      if (!value) return;
+
+      alert(`Message submitted: ${value}`);
+
+      textarea.value = "";
+      textarea.style.height = "auto";
+    });
+</script>
+
+</body>
+</html>
