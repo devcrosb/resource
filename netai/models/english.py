@@ -33,7 +33,38 @@ def isWordGroup(val):
 def isSyntax(val):
 	if Syntax(val):
 		return True
-	
+
+
+def isPlural(value):
+
+	word = Word(value)
+	if not word:
+		return False
+
+	word = word.lower()
+
+	for grp,vals in WORD["plural"].items():
+		if word in vals:
+			return True
+
+	# Common plural transformations.
+	if word.endswith("ies") and len(word) > 3:
+		return True
+
+	if word.endswith("ves") and len(word) > 3:
+		return True
+
+	if word.endswith(("ches", "shes", "xes", "zes")):
+		return True
+
+	# Conservative general "-s" rule.
+	if word.endswith("s") and not word.endswith(
+		("ss", "us", "is", "ous", "ness")
+	):
+		return True
+
+	return False	
+
 
 ### Parsers
 ### ============================================================
@@ -127,7 +158,7 @@ def Strip(value):
 		return
 	
 	if len(value) == 1:
-		return DATA["alias"].get(value) or value
+		return WORD["alias"].get(value) or value
 
 	if len(value) < 2:
 		return value
@@ -159,10 +190,10 @@ def DefineWord(value: str) -> str:
 
 
 	# Irregular verbs
-	if DATA["verb-past"].get(word):
+	if WORD["verb-past"].get(word):
 		return {"word":word,"type":"verb","class":"irregular-past","tense":"past","id":"v.i.p"}
 
-	if DATA["verb-present"].get(word):
+	if WORD["verb-present"].get(word):
 		return {"word":word,"type":"verb","class":"irregular-present","tense":"present","id":"v.i"}
 
 
@@ -193,10 +224,130 @@ def WordGroup(value):
 	except:
 		return
 	
-	return DATA["words"].get(val)
+	return WORD["group"].get(val)
 
 
-DATA = {
+def ScrubWord(value):
+
+	value = str(value).lower()
+	res = ""
+	for char in value:
+		if char.isalpha():
+			res+=char
+
+	if len(res) > 0:
+		return Word(res)
+
+
+def BaseWord(word):
+
+	try:
+		original = word.strip()
+	except:
+		original = None
+	
+	if not original:
+		return
+
+
+	# Retain only the word portion and normalise apostrophes.
+	value = original.lower().replace("’", "'")
+	value = re.sub(r"^[^a-z']+|[^a-z']+$", "", value)
+
+	if not value:
+		return original
+
+	if value.endswith("'s"):
+		value = value[:-2]
+
+	elif value.endswith("s'"):
+		value = value[:-1]
+
+
+	if WORD["irregular"].get(value):
+		return WORD["irregular"].get(value)
+
+	if value in WORD["un-inflected"] and len(value) <= 3:
+		return value
+
+	# ------------------------------------------------------------
+	# Verb forms
+	# ------------------------------------------------------------
+
+	# studies -> study, carries -> carry
+	if value.endswith("ies") and len(value) > 4:
+		return value[:-3] + "y"
+
+	# studying -> study, carrying -> carry
+	if value.endswith("ying") and len(value) > 5:
+		return value[:-4] + "y"
+
+	# running -> run, walking -> walk, writing -> write
+	if value.endswith("ing") and len(value) > 5:
+		stem = value[:-3]
+		stem = ScrubCons(stem)
+
+		if stem in WORD["un-inflected"]:
+			return stem + "e"
+
+		return stem
+
+	# studied -> study, carried -> carry
+	if value.endswith("ied") and len(value) > 4:
+		return value[:-3] + "y"
+
+	# stopped -> stop, walked -> walk, liked -> like
+	if value.endswith("ed") and len(value) > 4:
+		stem = value[:-2]
+		stem = ScrubCons(stem)
+
+		if stem in WORD["silent"]:
+			return stem + "e"
+
+		return stem
+
+	# watches -> watch, fixes -> fix, passes -> pass
+	if re.search(r"(ches|shes|sses|xes|zes)$", value):
+		return value[:-2]
+
+	# goes -> go, echoes -> echo
+	if value.endswith("oes") and len(value) > 4:
+		return value[:-2]
+
+	# ------------------------------------------------------------
+	# Regular plurals and third-person verbs
+	# ------------------------------------------------------------
+
+	# cats -> cat, works -> work
+	if (
+		value.endswith("s")
+		and not value.endswith(("ss", "us", "is", "ous"))
+		and len(value) > 3
+	):
+		return value[:-1]
+
+	return value
+
+
+def ScrubCons(word: str) -> str:
+	"""
+	Remove the final letter when a suffix caused a consonant to double.
+
+	Examples:
+		running -> runn -> run
+		stopped -> stopp -> stop
+	"""
+	if (
+		len(word) >= 3
+		and word[-1] == word[-2]
+		and word[-1] not in "aeiou"
+	):
+		return word[:-1]
+
+	return word
+
+
+WORD = {
 	"alias":{
 		"=":"equals",
 		"==":"equals",
@@ -205,7 +356,7 @@ DATA = {
 		"|":"or",
 		"||":"or"
 	},    
-	"types":{
+	"id":{
 		"verb":"v",
 		"noun":"n",
 		"adjective":"adj",    
@@ -216,7 +367,7 @@ DATA = {
 		"determiner":"deter",
 		"interjections":"intj"
 	},    
-	"words":{
+	"group":{
 		"about":"preposition",
 		"above":"preposition",
 		"across":"preposition",
@@ -655,5 +806,219 @@ DATA = {
 		"know":"verb-present",
 		"think":"verb-present",
 		"put":"verb-present"
-	}
+	},
+	"plural":{
+		"irregular":{
+			"children",
+			"people",
+			"men",
+			"women",
+			"teeth",
+			"feet",
+			"geese",
+			"mice",
+			"lice",
+			"oxen",
+			"dice",
+			"brethren",
+			"criteria",
+			"phenomena",
+			"indices",
+			"matrices",
+			"vertices",
+			"analyses",
+			"diagnoses",
+			"theses",
+			"crises",
+			"bases",
+			"axes",
+			"alumni",
+			"cacti",
+			"fungi",
+			"nuclei",
+			"syllabi"
+		},
+		"exceptions":{
+			"address",
+			"analysis",
+			"basis",
+			"bus",
+			"business",
+			"canvas",
+			"class",
+			"crisis",
+			"dress",
+			"focus",
+			"gas",
+			"glass",
+			"grass",
+			"kiss",
+			"lens",
+			"loss",
+			"mass",
+			"news",
+			"process",
+			"status",
+			"thesis",
+			"virus"
+		},
+		"ambiguous":{
+			"aircraft",
+			"bison",
+			"deer",
+			"fish",
+			"moose",
+			"offspring",
+			"salmon",
+			"series",
+			"sheep",
+			"species",
+			"spacecraft",
+			"swine",
+			"trout"
+		}
+	},
+	"un-inflected":{
+		"business",
+		"class",
+		"glass",
+		"grass",
+		"mass",
+		"process",
+		"access",
+		"address",
+		"analysis",
+		"basis",
+		"crisis",
+		"news",
+		"series",
+		"species",
+		"physics",
+		"mathematics",
+		"economics",
+		"status",
+		"virus",
+		"bonus",
+		"campus",
+		"focus",
+		"plus",
+		"gas",
+		"this",
+		"his",
+		"yes"
+	},
+	"silent":{
+		"achiev",
+		"arriv",
+		"believ",
+		"chang",
+		"clos",
+		"creat",
+		"danc",
+		"delet",
+		"driv",
+		"escap",
+		"giv",
+		"hop",
+		"lik",
+		"liv",
+		"lov",
+		"mak",
+		"mov",
+		"notic",
+		"plac",
+		"receiv",
+		"remov",
+		"sav",
+		"smil",
+		"tak",
+		"us",
+		"writ"
+	},
+	"irregular":{
+		"am": "be",
+		"are": "be",
+		"is": "be",
+		"was": "be",
+		"were": "be",
+		"been": "be",
+		"being": "be",
+		"has": "have",
+		"had": "have",
+		"having": "have",
+		"does": "do",
+		"did": "do",
+		"done": "do",
+		"doing": "do",
+		"went": "go",
+		"gone": "go",
+		"ran": "run",
+		"written": "write",
+		"wrote": "write",
+		"spoken": "speak",
+		"spoke": "speak",
+		"taken": "take",
+		"took": "take",
+		"made": "make",
+		"making": "make",
+		"came": "come",
+		"coming": "come",
+		"saw": "see",
+		"seen": "see",
+		"gave": "give",
+		"given": "give",
+		"got": "get",
+		"gotten": "get",
+		"bought": "buy",
+		"brought": "bring",
+		"thought": "think",
+		"caught": "catch",
+		"taught": "teach",
+		"found": "find",
+		"felt": "feel",
+		"left": "leave",
+		"kept": "keep",
+		"slept": "sleep",
+		"said": "say",
+		"told": "tell",
+		"knew": "know",
+		"known": "know",
+		"lying": "lie",
+		"dying": "die",
+		"tying": "tie",
+		"children": "child",
+		"people": "person",
+		"men": "man",
+		"women": "woman",
+		"mice": "mouse",
+		"geese": "goose",
+		"teeth": "tooth",
+		"feet": "foot",
+		"oxen": "ox",
+		"indices": "index",
+		"matrices": "matrix",
+		"vertices": "vertex",
+		"analyses": "analysis",
+		"criteria": "criterion",
+		"phenomena": "phenomenon",
+		"data": "datum",
+		"wives": "wife",
+		"lives": "life",
+		"knives": "knife",
+		"leaves": "leaf",
+		"wolves": "wolf",
+		"shelves": "shelf",
+		"halves": "half",
+		"calves": "calf",
+		"loaves": "loaf",
+		"thieves": "thief",
+		"better": "good",
+		"best": "good",
+		"worse": "bad",
+		"worst": "bad",
+		"farther": "far",
+		"farthest": "far",
+		"further": "far",
+		"furthest": "far",
+	}	
 }

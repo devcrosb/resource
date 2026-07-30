@@ -58,9 +58,33 @@ def Test3():
 	#print(json.dumps(resp,indent=4))
 	Display(resp["data"])
 
+def Test4():
+
+	import netai.parse as parse
+
+	test_words = [
+		"cities",
+		"boxes",
+		"children",
+		"running",
+		"stopped",
+		"studied",
+		"making",
+		"writes",
+		"wolves",
+		"business",
+		"analysis",
+	]
+
+	print("\n #Base Words:\n")
+
+	for test_word in test_words:
+		base_word = parse.BaseWord(test_word) or ""
+		print(f"{test_word:12} -> {base_word:12} -> {parse.isPlural(test_word)}")
+
 
 if __name__ == "__main__":
-	Test2()
+	Test4()
 	
 
 

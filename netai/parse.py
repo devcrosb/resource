@@ -2,7 +2,7 @@
 ### Parsers:
 ### --------------------------------------------------------------------
 
-from netai.models.english import Word, WordType, WordGroup, Syntax
+from netai.models.english import Word, WordType, WordGroup, Syntax, BaseWord
 from netai.models.text import Text, Tokens, Labels
 from netai.models.ascii import Ascii
 from netai.models.encode import DF, DT, SHA1, Pop, JSON, CSV_To_DF
@@ -14,7 +14,7 @@ from netai.models.ipam import Email,Domain,FQDN,Hostname,IP,Network,Mask,DNS
 ### Validators:
 ### --------------------------------------------------------------------
 
-from netai.models.english import isWord, isWordType, isWordGroup, isSyntax
+from netai.models.english import isWord, isWordType, isWordGroup, isSyntax, isPlural
 from netai.models.text import isText
 from netai.models.ascii import isAscii
 from netai.models.encode import isDF, isDT, isJSON
