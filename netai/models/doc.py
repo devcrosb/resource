@@ -307,6 +307,40 @@ def WikiMD_To_HTML(text):
 	return "\n".join(rendered_blocks)
 
 
+def DF_to_WikiMD(rows):
+
+    if not rows:
+        return '{| class="wikitable"\n|}'
+
+
+    columns = list(rows[0].keys())
+
+    def format_value(value: Any) -> str:
+        if value is None:
+            return ""
+
+        # Keep each table cell on one line.
+        return str(value).replace("\r\n", "<br>").replace("\n", "<br>")
+
+    lines = [
+        '{| class="wikitable"',
+        "|-",
+        "! " + " !! ".join(format_value(column) for column in columns),
+    ]
+
+    for row in rows:
+        lines.append("|-")
+        lines.append(
+            "| " + " || ".join(
+                format_value(row.get(column, ""))
+                for column in columns
+            )
+        )
+
+    lines.append("|}")
+    return "\n".join(lines)	
+
+
 ### Helpers
 ### ===================================================================
 
