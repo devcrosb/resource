@@ -1,0 +1,14 @@
+.text-content {
+  line-height: 1.5;
+}
+
+.text-content.collapsed {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.toggle-button {
+  margin-top: 0.4rem;
+}
