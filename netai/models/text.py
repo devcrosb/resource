@@ -112,3 +112,41 @@ def isText(value):
     else:
         return False
 
+def Match(pattern: str, text: str) -> bool:
+
+    if not text:
+        return False
+    
+    if not pattern:
+        return True
+
+    text = str(text)
+
+    if "*" not in pattern:
+        return text == pattern
+
+    parts = pattern.split("*")
+    pos = 0
+    end = len(text)
+
+    # Check required prefix
+    if parts[0]:
+        if not text.startswith(parts[0]):
+            return False
+        pos = len(parts[0])
+
+    # Check required suffix
+    if parts[-1]:
+        if not text.endswith(parts[-1]):
+            return False
+        end -= len(parts[-1])
+
+    # Find intermediate substrings in order
+    for part in parts[1:-1]:
+        if part:
+            index = text.find(part, pos, end)
+            if index == -1:
+                return False
+            pos = index + len(part)
+
+    return pos <= end
